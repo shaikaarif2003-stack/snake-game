@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-neon-pink: #ff00ff;
+  --color-neon-blue: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-green: #39ff14;
+}
+
+@layer utilities {
+  .neon-text-pink {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+  }
+  .neon-text-blue {
+    text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff;
+  }
+  .neon-border-pink {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.4), inset 0 0 5px rgba(255, 0, 255, 0.2);
+    border-color: #ff00ff;
+  }
+  .neon-border-blue {
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.4), inset 0 0 5px rgba(0, 243, 255, 0.2);
+    border-color: #00f3ff;
+  }
+  .neon-border-purple {
+    box-shadow: 0 0 5px #bc13fe, inset 0 0 5px #bc13fe;
+    border-color: #bc13fe;
+  }
+  .neon-box-glow {
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);
+  }
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
